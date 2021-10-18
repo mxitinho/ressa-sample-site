@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Gilroy-Bold;
+    font-style: normal;
+    font-weight: 400;
+    src: local('Gilroy-Bold'), url(https://fonts.cdnfonts.com/s/16219/Gilroy-Bold.woff) format('woff');
+}
+
+@font-face {
+    font-family: Gilroy-Heavy;
+    font-style: normal;
+    font-weight: 400;
+    src: local('Gilroy-Heavy'), url(https://fonts.cdnfonts.com/s/16219/Gilroy-Heavy.woff) format('woff');
+}
+
+@font-face {
+    font-family: Gilroy-Light;
+    font-style: normal;
+    font-weight: 400;
+    src: local('Gilroy-Light'), url(https://fonts.cdnfonts.com/s/16219/Gilroy-Light.woff) format('woff');
+}
+
+@font-face {
+    font-family: Gilroy-Medium;
+    font-style: normal;
+    font-weight: 400;
+    src: local('Gilroy-Medium'), url(https://fonts.cdnfonts.com/s/16219/Gilroy-Medium.woff) format('woff');
+}
+
+@font-face {
+    font-family: Gilroy-Regular;
+    font-style: normal;
+    font-weight: 400;
+    src: local('Gilroy-Regular'), url(https://fonts.cdnfonts.com/s/16219/Gilroy-Regular.woff) format('woff');
+}
+
+body, .rsa-cnt {
+    margin: 0 48px;
+    height: 100vh;
+    color: #000000;
+    background: #f0f0f0;
+    font-family: 'Gilroy-Regular', sans-serif;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+button[type] {
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.rsa-cnt {
+    .cnt-_1 {
+        display: flex;
+        flex-direction: column;
+        h1 {
+            font-family: 'Gilroy-Medium', sans-serif;
+            font-weight: 700;
+            font-size: 44px;
+            span {
+                border-bottom: 4px dotted #ff0004;
+            }
+        }
+        p {
+            margin-top: 16px;
+        }
+        button[type=button] {
+            font-family: 'Gilroy-Regular', sans-serif;
+            font-size: 16px;
+            background: #ff0004;
+            margin-top: 16px;
+            border-radius: 10px;
+            color: #ffffff;
+            width: 186px;
+            padding: 14px 0;
+            transition: filter 0.5s;
+            &:hover {
+                filter: brightness(0.85);
+            }
+        }
+        small, small a {
+            margin-top: 4px;
+
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+        }
+        small a {
+            text-decoration: none;
+            color: #777777;
+            font-size: 13px;
+            img {
+                margin-top: -2px;
+                margin-left: 4px;
+                width: 13px;
+            }
+        }
+    }
+    .cnt-_2 img {
+        max-width: 600.5px;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+    .cnt-_2 img {
+        display: none;
+    }
+}
